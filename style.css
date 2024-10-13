@@ -62,7 +62,7 @@ Start Parallax Header and Overall Layout Stuff */
   left: 0;
   top: 0;
   width: 100%;
-  background-image: url("/images/background.png");
+  background-image: url("images/background.png");
   background-position: center;
   background-size: cover;
 }
