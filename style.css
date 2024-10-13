@@ -1,0 +1,120 @@
+body{
+  margin:0px;
+}
+
+a{
+    cursor: help; 
+}
+
+audio{
+  width:100%;
+}
+
+h1 {
+  font-size: 18vw;
+  padding:0px;
+  margin:0px;
+  text-shadow: 5px 5px #000000;
+  font-family: 'Silkscreen', cursive;
+  animation: colorRotate 2s linear 0s infinite;
+}
+
+.specialParagraph::selection {
+  background: #D9027D;
+}
+
+.specialParagraph{
+  font-family:'Courier New';
+}
+
+.specialParagraph2{
+  transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+  padding: .5rem .5rem;
+  margin: -.5rem -.5rem;
+}
+
+.specialParagraph2:hover {
+  color: #2a3ea2;
+  box-shadow: inset 660px 0 0 0 #F5CE1B;
+  
+}
+#profilePic{
+  border-radius:50%; 
+  float:right; 
+  width:25%; 
+  margin:10px; 
+  cursor: url(/images/cursor.png), auto;
+}
+
+@keyframes colorRotate {
+  from {
+  color: #FFFFFF;} 12.4%{color: #FFFFFF;}
+  12.5% {color: #152054;} 37.4%{color: #152054;}
+  37.5% {color: #F5CE1B;} 62.4%{color: #F5CE1B;}
+  62.5% {color: #CFCDCB;} 87.4%{color: #CFCDCB;}
+  87.5%{color: #FFFFFF;} 100% {color: #FFFFFF;}
+}
+
+/*//////////////////////////
+Start Parallax Header and Overall Layout Stuff */
+.mxH {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-image: url("/images/background.png");
+  background-position: center;
+  background-size: cover;
+}
+.mxH::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.mxH2 {
+  position: relative;
+  padding: 0% 0 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mxS {
+  position: relative;
+  background-color:#eeeeee;
+  margin
+}
+.mxS2 {
+  text-align:justify;
+  position: relative;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+/* Parallax Header and Overall Layout Stuff
+////////////////////*/
+
+/*/////////////////////
+Start Gallery Stuff */
+.gallery {
+	padding: 0rem;
+  grid-column-gap: 0rem;
+	grid-row-gap: 0rem;
+	display: grid;
+	grid-template-columns: repeat(3, 100%);
+	grid-template-rows: 1fr;
+	overflow: scroll;
+	scroll-snap-type: both mandatory;
+	scroll-padding: 1rem;
+}
+.gallery li {
+	scroll-snap-align: center;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 0;
+}
+/*End Gallery Stuff
+///////////////////////*/
